@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김동환 · AI 활용 포트폴리오</title>
+<meta name="description" content="AI로 반복 업무를 더 정확하고 빠르게 만드는 실무형 지원자 김동환의 포트폴리오">
+<style>
+:root {
+  --bg: #f7f8fa; --panel: #ffffff; --line: #e3e6eb; --text: #1b2130; --muted: #5f6b7e;
+  --accent: #2f5496; --accent-soft: #e9eff9; --green: #1e7b4a; --green-soft: #e4f4ea;
+  --amber: #9a5b00; --amber-soft: #fff3db;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #13161b; --panel: #1b1f27; --line: #2b313c; --text: #e7eaf0; --muted: #9ba5b4;
+    --accent: #8fb0ef; --accent-soft: #222d43; --green: #7fd6a4; --green-soft: #1c3227;
+    --amber: #f2c46d; --amber-soft: #382e18;
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 16px/1.7 "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; word-break: keep-all; }
+a { color: var(--accent); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+nav { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); }
+nav .wrap { display: flex; align-items: center; gap: 20px; height: 56px; }
+nav b { font-size: 16px; }
+nav .links { margin-left: auto; display: flex; gap: 18px; font-size: 14px; }
+nav .links a { color: var(--muted); text-decoration: none; }
+nav .links a:hover { color: var(--text); }
+header.hero { padding: 72px 0 56px; }
+.hero h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.3; margin: 0 0 16px; letter-spacing: -0.5px; }
+.hero p { color: var(--muted); max-width: 640px; margin: 0 0 24px; }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { display: inline-block; padding: 10px 18px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--text); text-decoration: none; font-size: 15px; font-weight: 600; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+section { padding: 48px 0; border-top: 1px solid var(--line); }
+section h2 { font-size: 22px; margin: 0 0 8px; }
+section .lead { color: var(--muted); margin: 0 0 24px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 20px; }
+.card h3 { font-size: 16px; margin: 0 0 6px; line-height: 1.45; }
+.card .meta { font-size: 13px; color: var(--muted); }
+.badge { display: inline-block; font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); margin-bottom: 10px; }
+.badge.green { background: var(--green-soft); color: var(--green); }
+.badge.amber { background: var(--amber-soft); color: var(--amber); }
+.project { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 28px; margin-bottom: 16px; }
+.project h3 { font-size: 20px; margin: 4px 0 10px; }
+.project ul { padding-left: 20px; margin: 12px 0; }
+.project li { margin: 4px 0; }
+.nums { width: 100%; border-collapse: collapse; font-size: 14px; margin: 16px 0 6px; }
+.nums th, .nums td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+.nums th { color: var(--muted); font-weight: 600; font-size: 13px; }
+.nums td.n { font-variant-numeric: tabular-nums; }
+.note { font-size: 13px; color: var(--muted); margin: 0 0 16px; }
+.flow { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 13px; margin: 14px 0; }
+.flow span { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 4px 10px; }
+.flow span.human { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.flow i { color: var(--muted); font-style: normal; }
+footer { padding: 32px 0 48px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); }
+@media (max-width: 640px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
+  nav .links { gap: 12px; font-size: 13px; }
+  .project { padding: 20px; }
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>김동환</b>
+  <div class="links"><a href="#about">소개</a><a href="#credentials">AI 이력</a><a href="#projects">프로젝트</a><a href="#contact">연락</a></div>
+</div></nav>
+
+<div class="wrap">
+<header class="hero">
+  <h1>AI로 반복 업무를<br>더 정확하고 빠르게 만듭니다</h1>
+  <p>영업지원 · 영업관리 · 구매 · 납기/납품 · SCM 업무에서 생기는 반복 작업을 찾아, AI가 정리하고 사람이 판단하는 업무 흐름으로 바꾸고, 그 효과를 숫자로 검증합니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="maildesk/app/maildesk.html">Maildesk 데모 체험하기</a>
+    <a class="btn" href="#projects">프로젝트 보기</a>
+  </div>
+</header>
+
+<section id="about">
+  <h2>소개</h2>
+  <p class="lead">건국대학교 석사과정(기계 관련 전공)에서 실험 설계와 데이터 분석을 하며, 연구실의 구매·행정·협업 업무를 함께 맡아 왔습니다.</p>
+  <div class="grid">
+    <div class="card"><h3>문제를 업무 단위로 쪼갭니다</h3><div class="meta">"무엇이 급한지 알아내고, 숫자를 옮겨 적고, 답장을 쓰는" 일처럼 병목이 생기는 지점을 구체적인 작업으로 나눕니다.</div></div>
+    <div class="card"><h3>결과를 검증합니다</h3><div class="meta">정답표를 먼저 만들고, AI를 쓰기 전과 후를 같은 기준으로 비교합니다. 측정하지 않은 성과는 쓰지 않습니다.</div></div>
+    <div class="card"><h3>사람이 최종 판단합니다</h3><div class="meta">AI는 정리와 초안까지만 맡고, 발송·확정은 담당자가 하도록 설계합니다.</div></div>
+    <div class="card"><h3>AI 도구를 실무에 연결합니다</h3><div class="meta">Outlook · Excel 같은 익숙한 도구에 AI를 붙여, 별도 교육 없이 쓸 수 있는 형태로 만듭니다.</div></div>
+  </div>
+</section>
+
+<section id="credentials">
+  <h2>AI 학습 이력</h2>
+  <p class="lead">시험 기반 자격증, 디지털 배지, 교육 수료증을 구분해 적었습니다. 모두 2026년 10월에 취득했습니다.</p>
+  <div class="grid">
+    <div class="card"><span class="badge">시험 기반 자격증</span><h3>Oracle Cloud Infrastructure Certified AI Foundations Associate</h3><div class="meta">Oracle · 점수 98% · 2028년 10월까지 유효</div></div>
+    <div class="card"><span class="badge">디지털 배지</span><h3>Academy Accreditation – Generative AI Fundamentals</h3><div class="meta">Databricks</div></div>
+    <div class="card"><span class="badge">과정 인증 (Unit 1)</span><h3>AI Agents Fundamentals</h3><div class="meta">Hugging Face · Agents Course Unit 1</div></div>
+    <div class="card"><span class="badge">교육 수료증</span><h3>AI Fluency Framework &amp; Foundations</h3><div class="meta">Anthropic</div></div>
+  </div>
+  <p class="note" style="margin-top:14px"><a href="https://www.linkedin.com/in/%EB%8F%99%ED%99%98-%EA%B9%80-018a8b416/details/certifications/" target="_blank" rel="noopener">LinkedIn에서 인증 확인하기</a></p>
+</section>
+
+<section id="projects">
+  <h2>프로젝트</h2>
+  <p class="lead">일상 업무 효율과 연구 데이터, 두 갈래로 AI 활용 사례를 만들고 있습니다.</p>
+
+  <div class="project">
+    <span class="badge green">구현 완료 · 효과 실측 중</span>
+    <h3>Maildesk — AI 메일 분류 · 회신 초안 · 할 일 관리</h3>
+    <p>거래처 메일을 업무 유형별로 분류하고 요청사항·품번·수량·기한을 뽑아 할 일과 회신 초안까지 만들어 주되, <b>발송과 최종 판단은 담당자가 하는</b> 검토형 업무 보조 시스템입니다.</p>
+    <div class="flow">
+      <span>Outlook 메일 읽기</span><i>→</i><span>AI 분류·추출</span><i>→</i><span>근거 검증</span><i>→</i><span>회신 초안 3종</span><i>→</i><span class="human">담당자 검토</span><i>→</i><span class="human">직접 발송</span>
+    </div>
+    <ul>
+      <li>클래식 Outlook의 전용 테스트 폴더에서 메일을 읽고, 분류 태그와 기한 깃발을 다시 Outlook에 달아 줍니다.</li>
+      <li>AI가 판단 근거로 든 문장과 품번이 본문에 실제로 있는지 코드로 대조하고, 애매하면 "사람 확인 필요"로 표시합니다.</li>
+      <li>회신 초안에서 단가·출하일처럼 정해지지 않은 정보는 [확인 필요] 빈칸으로 남기고, 원문에 없는 숫자는 경고합니다.</li>
+      <li>메일 발송·삭제 기능은 아예 만들지 않았습니다.</li>
+    </ul>
+    <table class="nums">
+      <tr><th>항목</th><th>규칙 기반</th><th>AI</th></tr>
+      <tr><td>업무 유형 분류</td><td class="n">80%</td><td class="n">100%</td></tr>
+      <tr><td>기한 추출</td><td class="n">87%</td><td class="n">97%</td></tr>
+      <tr><td>품번·수량 추출</td><td class="n">87%</td><td class="n">100%</td></tr>
+      <tr><td>회신 필요 메일 놓침</td><td class="n">1 / 19건</td><td class="n">0 / 19건</td></tr>
+    </table>
+    <p class="note">가상 거래처 메일 30건 기준의 예비 결과입니다. 메일과 정답표를 AI가 함께 만들어 실제보다 높게 나왔을 수 있어, 다른 사람이 쓴 새 메일로 다시 측정하고 있습니다. 처리 시간 비교도 측정 예정입니다.</p>
+    <div class="btns">
+      <a class="btn primary" href="maildesk/app/maildesk.html">데모 체험하기</a>
+      <a class="btn" href="https://github.com/dhwankim1014/dhwankim1014.github.io/tree/main/maildesk" target="_blank" rel="noopener">코드와 설명서</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <span class="badge amber">준비 중</span>
+    <h3>연구 데이터 정리 자동화</h3>
+    <p>여러 실험 CSV 파일을 정리하고, RMS 같은 지표를 계산하고, 그래프 형식을 통일하는 작업을 검증 가능한 자동화로 만듭니다. "규칙을 정하고 → 처리하고 → 검증해서 → 같은 형식으로 보고하는" 과정은 사무 데이터 업무에도 그대로 쓰입니다.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>연락</h2>
+  <p class="lead">아래 LinkedIn으로 연락 주세요.</p>
+  <div class="btns"><a class="btn" href="https://www.linkedin.com/in/%EB%8F%99%ED%99%98-%EA%B9%80-018a8b416/" target="_blank" rel="noopener">LinkedIn</a></div>
+</section>
+</div>
+
+<footer><div class="wrap">이 사이트와 Maildesk는 AI 코딩 도구(Claude Code)를 활용해 직접 기획하고 검증하며 만들었습니다. 모든 데모 데이터는 가상입니다. · 마지막 업데이트 2026-11-19</div></footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+{
+  "classifier": "cli-v1-medium-sample3",
+  "source": "outlook",
+  "predictions": {
+    "M01": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-SHF-118",
+          "qty": 500
+        },
+        {
+          "part_no": "HG-SHF-120",
+          "qty": 300
+        }
+      ],
+      "due_date": "2026-11-20",
+      "due_text": "11월 20일(금)까지",
+      "request_summary": "대성모빌리티에 HG-SHF-118(500개), HG-SHF-120(300개) 단가 견적서를 11/20(금)까지 회신",
+      "evidence": "견적서는 11월 20일(금)까지 회신 부탁드립니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처 구매팀이 두 품목의 단가 견적을 요청했으므로 업무/견적요청입니다. 기한 2026-11-20은 기준 시점에서 2영업일 이내라서 긴급도는 '상'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M02": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BKT-210",
+          "qty": null
+        }
+      ],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "세진전자에 HG-BKT-210 브래킷의 대략적인 단가 수준 회신 (연간 물량 미확정)",
+      "evidence": "우선 대략적인 단가 수준을 알려주실 수 있을까요?",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처가 신규 모델 적용을 검토하면서 HG-BKT-210의 대략적인 단가를 요청한 견적요청 메일입니다. 기한이 따로 없고 물량도 정해지지 않아 긴급도는 '중'으로 판단했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M03": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-PLT-305",
+          "qty": 1200
+        }
+      ],
+      "due_date": "2026-11-27",
+      "due_text": "by the end of next week",
+      "request_summary": "Pacific Robotics에 HG-PLT-305 알루미늄 플레이트 1,200개 견적서 발송",
+      "evidence": "We would like to request a quotation for the item below.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처 구매 담당자가 특정 품번과 수량을 적어 견적을 요청한 메일입니다. 기한은 수신일(11-17, 화) 기준 '다음 주 말'로, 다음 주 금요일인 2026-11-27로 계산했습니다. 기준 시점부터 2영업일보다 뒤이므로 긴급도는 '중'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    }
+  }
+}

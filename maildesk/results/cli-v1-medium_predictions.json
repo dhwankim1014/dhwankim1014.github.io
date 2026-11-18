@@ -1,0 +1,630 @@
+{
+  "classifier": "cli-v1-medium",
+  "source": "outlook",
+  "predictions": {
+    "M01": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-SHF-118",
+          "qty": 500
+        },
+        {
+          "part_no": "HG-SHF-120",
+          "qty": 300
+        }
+      ],
+      "due_date": "2026-11-20",
+      "due_text": "11월 20일(금)까지",
+      "request_summary": "대성모빌리티에 HG-SHF-118(500개)과 HG-SHF-120(300개)의 단가 견적서를 11/20(금)까지 보내기",
+      "evidence": "견적서는 11월 20일(금)까지 회신 부탁드립니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처 구매팀이 두 품목의 단가 견적을 요청했으므로 업무/견적요청입니다. 기한인 2026-11-20은 기준 시점에서 2영업일 이내라서 긴급도는 '상'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M02": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BKT-210",
+          "qty": null
+        }
+      ],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "세진전자에 HG-BKT-210 브래킷의 대략적인 단가 수준 회신",
+      "evidence": "우선 대략적인 단가 수준을 알려주실 수 있을까요?",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "신규 모델 적용 검토를 위해 HG-BKT-210의 단가를 묻는 견적 요청입니다. 연간 물량이 확정되지 않아 수량은 null로 두었고, 명시된 기한이 없어 긴급도는 '중'으로 판단했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M03": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-PLT-305",
+          "qty": 1200
+        }
+      ],
+      "due_date": "2026-11-27",
+      "due_text": "by the end of next week",
+      "request_summary": "Pacific Robotics에 HG-PLT-305(알루미늄 플레이트) 1,200개 견적서를 2026-11-27(다음 주 금요일)까지 보내기",
+      "evidence": "Please send us your quote by the end of next week.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처 구매 담당자가 품번과 수량을 적어 견적을 요청했으므로 업무/견적요청입니다. 수신일(11-17, 화)을 기준으로 '다음 주 말'을 금요일인 11-27로 보았습니다. 2영업일(~11-20)을 넘기므로 긴급도는 '중'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M04": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-BRG-2040",
+          "qty": 1000
+        }
+      ],
+      "due_date": "2026-11-18",
+      "due_text": "내일 오전까지",
+      "request_summary": "HG-BRG-2040 견적을 800개 기준에서 1,000개 기준으로 다시 작성해 동양기계 최영훈 님께 11/18 오전까지 회신",
+      "evidence": "지난주 받은 HG-BRG-2040 견적(800개 기준)을 1,000개 기준으로 다시 받아볼 수 있을까요?",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "기존 견적의 수량 기준을 바꿔 다시 견적해 달라는 요청이라 견적요청으로 분류했습니다. 기한은 수신일(11/17) 기준 '내일 오전', 즉 2026-11-18 오전입니다. 기준 시점(11/18 10:00)에 이미 기한이 닥쳤거나 지났을 수 있어 긴급도는 '상'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M05": {
+      "cat1": "업무",
+      "cat2": "견적요청",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-SNS-77",
+          "qty": 200
+        }
+      ],
+      "due_date": "2026-11-23",
+      "due_text": "다음 주 월요일 내부 회의 전까지",
+      "request_summary": "미래오토텍에 HG-SNS-77 센서 브래킷 200개 견적과 발주 시 예상 납기(리드타임)를 11/23(월) 회의 전까지 회신",
+      "evidence": "HG-SNS-77 센서 브래킷 200개에 대한 견적을 받고 싶습니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "신규 구매 담당자가 품번·수량을 적어 견적을 요청한 메일이라 견적요청으로 분류했습니다. 납기 질문은 기존 주문 건이 아니라 견적과 함께 묻는 리드타임 문의입니다. 기한은 수신일(11/17 화) 기준 다음 주 월요일인 11/23이고, 2영업일(11/20) 이후라서 긴급도는 '중'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M06": {
+      "cat1": "업무",
+      "cat2": "납기문의",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-SHF-118",
+          "qty": 500
+        }
+      ],
+      "due_date": "2026-11-18",
+      "due_text": "오늘 중으로 회신 주시면 감사하겠습니다.",
+      "request_summary": "PO-2611-0042(HG-SHF-118, 500개) 납기를 11/25에서 11/21로 당길 수 있는지 확인해 오늘(11/18) 안에 회신",
+      "evidence": "오늘 중으로 회신 주시면 감사하겠습니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "이미 있는 주문(PO-2611-0042)의 납기를 앞당겨 달라는 요청이라 납기문의로 분류했습니다. 회신 기한이 수신 당일(11/18)이고 요청한 납기도 11/21이라 긴급도는 '상'입니다. 회신 기한과 별도로 요청 납기는 11/21입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M07": {
+      "cat1": "업무",
+      "cat2": "납기문의",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BKT-210",
+          "qty": 2000
+        }
+      ],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "PO-2610-0315(HG-BKT-210 2,000개)의 출하 예정일을 확인해 세진전자 박민호 님께 회신",
+      "evidence": "지난달 견적 받고 발주드린 PO-2610-0315 건(HG-BRG-2040 아님, HG-BKT-210 2,000개) 출하 예정일이 언제인지 궁금합니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "제목에는 '[견적]'이 붙어 있지만 본문은 이미 발주한 PO-2610-0315 건의 출하 예정일을 묻는 내용이라 납기문의로 분류했습니다. 본문에서 HG-BRG-2040은 대상이 아니라고 밝혀 제외했고, 회신 기한이 적혀 있지 않아 긴급도는 '중'으로 두었습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M08": {
+      "cat1": "업무",
+      "cat2": "납기문의",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-PLT-305",
+          "qty": 600
+        }
+      ],
+      "due_date": "2026-11-24",
+      "due_text": "Our assembly line will stop on Nov 24 if the parts do not arrive.",
+      "request_summary": "PO PR-55871(HG-PLT-305, 600 pcs)의 출하·도착 현황을 확인해 11/24 이전 도착이 가능한지 빠르게 회신",
+      "evidence": "Our assembly line will stop on Nov 24 if the parts do not arrive.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "이미 발주된 PO의 배송 현황을 묻는 메일이라 납기문의로 분류했습니다. 11/24에 고객 조립 라인이 멈출 수 있고 '가능한 한 빨리' 회신을 요청해서, 즉시 대응이 필요한 라인 정지 건으로 보고 긴급도를 '상'으로 판단했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M09": {
+      "cat1": "업무",
+      "cat2": "납기문의",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-BRG-2040",
+          "qty": 300
+        }
+      ],
+      "due_date": "2026-11-20",
+      "due_text": "금주 중으로",
+      "request_summary": "HG-BRG-2040 잔량 300개 분할 출하 날짜를 확정해 이번 주 금요일(11/20)까지 동양기계에 알리기",
+      "evidence": "나머지 HG-BRG-2040 300개 분할 출하 날짜가 확정되면 금주 중으로 알려주세요.",
+      "confidence": "보통",
+      "needs_review": true,
+      "checks": [],
+      "reasons": [
+        "이미 있는 주문의 잔량 출하 시점을 묻고 있어 납기문의로 분류했습니다. 수신일(11/16, 월) 기준 '금주 중'은 11/20(금)이고, 기준 시점에서 2영업일 이내라 긴급도는 '상'입니다. '확정되면'이라는 조건부 표현이 있지만 이번 주 안에 안내해 달라는 요청으로 보고 회신 필요로 판단했습니다. 그래서 신뢰도는 '보통'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M10": {
+      "cat1": "업무",
+      "cat2": "납품일정",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [
+        {
+          "part_no": "HG-SNS-77",
+          "qty": 400
+        }
+      ],
+      "due_date": "2026-11-24",
+      "due_text": "11월 24일(화)",
+      "request_summary": "11월 24일(화) 09:00~15:00 사이 HG-SNS-77 400개 입고 일정을 확인하고, 일정이 바뀔 때만 연락함",
+      "evidence": "일정에 변동이 생기는 경우에만 연락 부탁드립니다.",
+      "confidence": "보통",
+      "needs_review": true,
+      "checks": [],
+      "reasons": [
+        "거래처 자재팀이 입고 일자와 입고 가능 시간을 알려 준 물류 일정 메일이라 납품일정으로 분류했습니다. 일정이 바뀔 때만 연락하면 되는 조건부 회신이라 회신 불필요(N), 긴급도 하로 봤습니다. 다만 회신이 필요 없는 확인 메일로 보면 참고·알림으로도 분류할 수 있어 신뢰도는 보통입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M11": {
+      "cat1": "업무",
+      "cat2": "납품일정",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [],
+      "due_date": "2026-11-19",
+      "due_text": "11월 19일 오후 3시까지",
+      "request_summary": "11/20 대성모빌리티행 출고 건의 팔레트 수량을 11/19 15시까지 한길로지스 배차팀에 회신",
+      "evidence": "11월 19일 오후 3시까지 팔레트 수량을 회신해 주세요.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "물류사가 출고 차량을 배차하려고 팔레트 수량 회신을 요청한 물류 일정 조율 메일입니다. 회신 기한이 11/19로 기준 시점부터 2영업일 안에 들어 긴급도는 '상'입니다. 본문에 품번·수량이 없어 items는 비웠습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M12": {
+      "cat1": "업무",
+      "cat2": "납품일정",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BKT-210",
+          "qty": 1000
+        }
+      ],
+      "due_date": "2026-12-01",
+      "due_text": "12월 1일 오전 도착",
+      "request_summary": "HG-BKT-210 1,000개 납품 때 검사성적서를 함께 보내고 12월 1일 오전에 도착시킬 수 있는지 확인해 회신",
+      "evidence": "가능 여부를 회신 부탁드립니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처가 납품 조건(검사성적서 동봉)과 도착 일정(12월 1일 오전)을 조율해 달라며 가능 여부 회신을 요청했으므로 납품일정입니다. 기한이 12월 1일이라 2영업일 이내가 아니므로 긴급도는 중입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M13": {
+      "cat1": "업무",
+      "cat2": "납품일정",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "12월 1일 입고분부터 납품 장소가 제2공장(가상시 산업로 200)으로 바뀐다는 내용을 관련 부서에 공유하고, 동양기계에 확인 회신 보내기",
+      "evidence": "12월 1일 입고분부터 납품 장소가 제2공장(가상시 산업로 200)으로 변경됩니다.",
+      "confidence": "보통",
+      "needs_review": true,
+      "checks": [],
+      "reasons": [
+        "거래처가 납품 장소 변경을 알리면서 확인 회신을 요청했으므로 납품일정 업무 메일입니다. 12월 1일은 변경이 적용되는 날짜이고 회신 기한이 아니어서 기한은 null로 두었습니다. 다만 그 전에 반영해야 하므로 긴급도는 '중'으로 판단했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M14": {
+      "cat1": "업무",
+      "cat2": "주문·변경",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-SHF-118",
+          "qty": 650
+        }
+      ],
+      "due_date": "2026-11-19",
+      "due_text": "11/19까지",
+      "request_summary": "PO-2611-0042의 HG-SHF-118 수량을 500개에서 650개로 늘릴 수 있는지(납기는 기존과 같음) 검토하고 11/19까지 회신",
+      "evidence": "PO-2611-0042의 HG-SHF-118 수량을 500개에서 650개로 변경 요청드립니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "기존 발주(PO-2611-0042)의 수량을 바꿔 달라는 요청이라 주문·변경으로 분류했습니다. 회신 기한 11/19가 기준 시점부터 2영업일 안에 있어 긴급도를 '상'으로 정했습니다. 수량은 변경 후 수량인 650개를 넣었습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M15": {
+      "cat1": "업무",
+      "cat2": "주문·변경",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-SNS-77",
+          "qty": 100
+        }
+      ],
+      "due_date": null,
+      "due_text": "가능한 빨리",
+      "request_summary": "PO-MA-1107의 HG-SNS-77 100개가 생산에 들어갔는지 확인하고, 취소 처리 후 결과를 회신",
+      "evidence": "고객사 일정 변경으로 PO-MA-1107의 HG-SNS-77 100개 주문을 취소하고자 합니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "기존 발주의 주문 취소 요청이므로 주문·변경으로 분류했습니다. 취소는 기준상 즉시 대응이 필요해 긴급도를 '상'으로 두었습니다. '가능한 빨리'는 날짜가 아니어서 due_date는 null로 두었습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M16": {
+      "cat1": "업무",
+      "cat2": "주문·변경",
+      "reply_needed": "Y",
+      "urgency": "상",
+      "items": [
+        {
+          "part_no": "HG-PLT-305",
+          "qty": 800
+        }
+      ],
+      "due_date": "2026-11-20",
+      "due_text": "within 2 business days",
+      "request_summary": "신규 발주 PR-55920(HG-PLT-305, 800개) 접수 확인 및 희망 납기(12/11) 가능 여부를 2영업일 내 회신",
+      "evidence": "Kindly confirm receipt and the delivery date within 2 business days.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처가 보낸 신규 발주(PO) 메일이고, 접수 확인과 납기 확정 회신을 요청하고 있습니다. 회신 기한은 수신일(11/18, 수)부터 2영업일인 11/20이라 '상'에 해당합니다. 희망 납품일 12/11은 납품 기한이며 회신 기한은 아닙니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M17": {
+      "cat1": "업무",
+      "cat2": "주문·변경",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BKT-210",
+          "qty": null
+        }
+      ],
+      "due_date": "2026-11-27",
+      "due_text": "다음 주 금요일까지",
+      "request_summary": "HG-BKT-210 도면 Rev.C(홀 위치 변경)를 다음 로트부터 적용하고, 단가 영향 여부를 2026-11-27까지 회신",
+      "evidence": "다음 로트부터 Rev.C로 적용 부탁드리며, 단가에 영향이 있는지 다음 주 금요일까지 알려주세요.",
+      "confidence": "보통",
+      "needs_review": true,
+      "checks": [],
+      "reasons": [
+        "도면 개정에 따른 사양 변경 적용 요청이 주된 내용이라 주문·변경으로 분류했으나, 단가 영향 회신 요청도 있어 견적요청으로 볼 여지가 있습니다. 기한은 수신일(11/17 화) 기준 다음 주 금요일인 11/27로, 2영업일을 넘기므로 긴급도는 중입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M18": {
+      "cat1": "업무",
+      "cat2": "일반문의",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [
+        {
+          "part_no": "HG-BRG-2040",
+          "qty": null
+        }
+      ],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "최근 입고된 HG-BRG-2040 로트의 재질 성적서(Mill Certificate)를 동양기계 품질팀에 송부",
+      "evidence": "최근 입고된 HG-BRG-2040 로트의 재질 성적서(Mill Certificate)를 보내주실 수 있을까요?",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처 품질팀이 수입검사용 서류(재질 성적서)를 요청한 메일이므로 서류 관련 일반문의로 분류했습니다. 기한이 명시되지 않았지만 서류를 보내야 하므로 긴급도는 '중'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M19": {
+      "cat1": "업무",
+      "cat2": "일반문의",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "넥스트모션에 제품 카탈로그와 담당자 연락처 송부",
+      "evidence": "귀사 제품 카탈로그와 담당자 연락처를 받아볼 수 있을까요?",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "잠재 거래처가 카탈로그와 담당자 연락처 같은 자료를 요청한 업무 문의라 회신이 필요합니다. 기한이 따로 없고 급한 사정도 없어서 긴급도는 '중'으로 봤습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M20": {
+      "cat1": "업무",
+      "cat2": "일반문의",
+      "reply_needed": "Y",
+      "urgency": "중",
+      "items": [],
+      "due_date": "2026-11-30",
+      "due_text": "11월 30일까지",
+      "request_summary": "미래오토텍에 당사 연말 휴무 기간과 연내 마지막 출하 가능일을 11월 30일까지 회신",
+      "evidence": "연말 재고 계획 수립을 위해 귀사의 연말 휴무 기간과 연내 마지막 출하 가능일을 알려주세요.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처가 연말 휴무 기간과 마지막 출하 가능일을 묻는 메일이라 일반문의로 분류했습니다. 특정 주문의 납기를 묻는 내용이 아닙니다. 회신 기한이 11/30이라 2영업일보다 여유가 있어 긴급도는 '중'입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M21": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "11월 3주차 출하 실적 리포트(출하 14건, 지연 1건)를 확인한다. 필요하면 지연 1건은 ERP에서 따로 점검한다.",
+      "evidence": "11월 3주차 출하 실적 리포트가 생성되었습니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "사내 ERP 발신 전용 주소에서 보낸 자동 리포트 생성 알림이다. 회신이나 거래처 대응 요청이 없어 참고·알림으로 분류했다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M22": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "연말 재고실사(12/28~29) 기간에 출하가 중단되니 일정을 참고하고, 필요하면 거래처 납기 조율에 반영",
+      "evidence": "해당 기간에는 출하가 중단되니 업무에 참고 바랍니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "사내 관리팀이 전 직원에게 보낸 재고실사 일정 공지로, 회신이나 처리 요청이 없는 참고용 메일입니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M23": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "첨부된 12월 생산 계획을 확인하고 내부에 공유(회신 불필요)",
+      "evidence": "본 메일은 일괄 발송 메일로 회신하지 않으셔도 됩니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "거래처가 협력사 전체에 일괄로 보낸 생산 계획 공유 공지이고, 회신하지 않아도 된다고 명시되어 있어 참고·알림으로 분류함. 첨부된 생산 계획은 이후 수주·납기 계획에 참고할 수 있음."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M24": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "세진전자(가상) 배송 완료(운송장 7750-1123)를 확인만 하면 되며 별도 조치는 필요 없음.",
+      "evidence": "본 메일은 자동 발송 메일입니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "물류사가 자동으로 보낸 배송 완료 알림이며 요청이나 기한이 없어 회신이 필요 없는 참고·알림으로 분류함."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M25": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "11/23(월) 10시 3층 회의실 주간 영업회의에 참석하고 담당 거래처 이슈를 정리해 가기(회신 불필요)",
+      "evidence": "이번 주간 영업회의는 11월 23일(월) 10시 3층 회의실에서 진행합니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "영업팀장이 사내에서 보낸 회의 일정 공지로, 거래처와 주고받는 업무 요청이 아니고 회신도 필요 없습니다. 사내 공지는 참고·알림 기준이라 기한은 null로 두었습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M26": {
+      "cat1": "참고·알림",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "조치 불필요 — 거래처가 HG-BRG-2040 견적서를 받았고 내부 검토 후 연락 예정이니 회신을 기다림",
+      "evidence": "내부 검토 후 다시 연락드리겠습니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "발송한 견적서를 받았다는 확인과 감사 인사만 있는 메일입니다. 새로운 요청이나 기한이 없고, 다음 연락은 거래처가 하기로 해서 우리가 회신할 필요가 없습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M27": {
+      "cat1": "광고·기타",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "조치 불필요 (전시회 사전등록 홍보 메일)",
+      "evidence": "사전등록 시 무료 입장 혜택을 드립니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "전시회 사무국이 보낸 사전등록 초대 홍보 메일입니다. 수신거부 안내가 있고 실제 업무 요청이 없어 광고·기타로 분류합니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M28": {
+      "cat1": "광고·기타",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "조치 불필요(구매대행 서비스 광고 메일)",
+      "evidence": "바이엑스퍼트 구매대행으로 견적 비용을 줄여보세요.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "제목에 '(광고)'가 표기되어 있고, 본문은 거래와 관계없는 구매대행 서비스 홍보입니다. '견적'이라는 단어가 나오지만 실제 견적 요청이 아니므로 광고·기타로 분류했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M29": {
+      "cat1": "광고·기타",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "피싱 의심 메일로 링크를 클릭하지 말고 보안 담당자에게 신고 후 삭제",
+      "evidence": "24시간 내 아래 링크에서 계정을 확인하지 않으면 메일 수신이 중단됩니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "보낸 사람의 외부 도메인(mailbox-verify.example.net)을 확인할 수 없고, 급하다며 계정 확인 링크를 누르게 하는 전형적인 피싱 수법이라 광고·기타(피싱 의심)로 분류했습니다. 업무 요청이 없어 회신이 필요 없고 기한과 품번도 넣지 않았습니다."
+      ],
+      "model": "claude-opus-5-5"
+    },
+    "M30": {
+      "cat1": "광고·기타",
+      "cat2": "-",
+      "reply_needed": "N",
+      "urgency": "하",
+      "items": [],
+      "due_date": null,
+      "due_text": null,
+      "request_summary": "조치 불필요 (원자재 시황 뉴스레터)",
+      "evidence": "본 뉴스레터는 구독자에게 발송됩니다.",
+      "confidence": "높음",
+      "needs_review": false,
+      "checks": [],
+      "reasons": [
+        "구독자에게 일괄 발송되는 원자재 시황 뉴스레터입니다. 업무 요청이 없어 광고·기타로 분류했습니다."
+      ],
+      "model": "claude-opus-5-5"
+    }
+  }
+}
